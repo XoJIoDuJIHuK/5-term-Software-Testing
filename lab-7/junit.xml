@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="0" errors="0" time="4.45">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-11-14T09:17:16" time="3.31" tests="10">
+    <testcase classname=" sum of 1 and 2 equals 3" name=" sum of 1 and 2 equals 3" time="0.003">
+    </testcase>
+    <testcase classname=" sum of zero and any number must not be greater or less than the number" name=" sum of zero and any number must not be greater or less than the number" time="0.002">
+    </testcase>
+    <testcase classname=" sum of two not equal values equal by module must return 0" name=" sum of two not equal values equal by module must return 0" time="0.001">
+    </testcase>
+    <testcase classname=" quick maths" name=" quick maths" time="0">
+    </testcase>
+    <testcase classname=" subtraction of two equal values must return 0" name=" subtraction of two equal values must return 0" time="0">
+    </testcase>
+    <testcase classname=" subtraction of zero and a number must return number multiplied by minus one" name=" subtraction of zero and a number must return number multiplied by minus one" time="0.001">
+    </testcase>
+    <testcase classname=" multiplication of any number and 0 equals 0" name=" multiplication of any number and 0 equals 0" time="0">
+    </testcase>
+    <testcase classname=" multiplication of 1.3333 and 3 not equals 4" name=" multiplication of 1.3333 and 3 not equals 4" time="0.001">
+    </testcase>
+    <testcase classname=" division by zero must throw error" name=" division by zero must throw error" time="0.011">
+    </testcase>
+    <testcase classname=" division of any number by 1 returns this number" name=" division of any number by 1 returns this number" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

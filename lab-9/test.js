@@ -64,7 +64,7 @@ class CatalogOnlinerTester {
                 try {
                     const titleText = await productTitles[i].getText();
                     if (!titleText.includes(textToFind)) {
-                        return false
+                        throw new Error(`the good must not be here - ${titleText}`)
                     }
                 } catch (error) {
                     if (error instanceof StaleElementReferenceError) {
@@ -77,7 +77,7 @@ class CatalogOnlinerTester {
                 }
             }
         } catch (error) {
-            console.error('Ошибка в тесте:', error);
+            console.error('Test error: ', error);
             return false
         }
         return true
@@ -99,7 +99,7 @@ class CatalogOnlinerTester {
             return true
 
         } catch (error) {
-            console.error('Ошибка в тесте:', error);
+            console.error('Test error:', error);
             return false
         }
     }
@@ -115,7 +115,7 @@ class CatalogOnlinerTester {
             }
             return true
         } catch (error) {
-            console.error('Ошибка в тесте:', error);
+            console.error('Test error:', error);
             return false
         }
     }
@@ -133,7 +133,7 @@ class CatalogOnlinerTester {
             }
             return true
         } catch (error) {
-            console.error('Ошибка в тесте:', error);
+            console.error('Test error:', error);
             return false
         }
     }
@@ -167,7 +167,7 @@ class CatalogOnlinerTester {
                 finalCityName === initialCityName) {
                 return true
             }
-            console.error('Ошибка в тесте:', error);
+            console.error('Test error:', error);
             return false
         }
     }
@@ -190,8 +190,6 @@ class CatalogOnlinerTester {
             pricesArray.push(price.slice(price));
         }
         const numericArray = pricesArray.map(str => parseFloat(str.replace(/[^\d.,]/g, '').replace(',', '.')));
-        console.log(pricesArray)
-        console.log(numericArray)
         for (let i = 0; i < numericArray.length - 1; i++) {
             if (numericArray[i] < numericArray[i + 1]) {
                 console.log(numericArray[i])
@@ -216,7 +214,6 @@ describe('test suite 1', () => {
     })
     afterAll(async () => {
         await tester.driver.quit()
-        await tester.close()
     })
 
     test('filter by manufacturer', async () => {

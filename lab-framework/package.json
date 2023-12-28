@@ -1,0 +1,21 @@
+{
+  "name": "lab-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "core.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "@jest/globals": "^29.7.0",
+    "log4js": "^6.9.1",
+    "selenium-webdriver": "^4.16.0",
+    "webdriver-manager": "^12.1.9"
+  }
+}

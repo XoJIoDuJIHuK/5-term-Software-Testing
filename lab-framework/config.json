@@ -1,0 +1,29 @@
+{
+    "defaultDriver": "chrome",
+    "cartLink": "https://cart.onliner.by",
+    "mainLink": "https://catalog.onliner.by/videocard",
+    "catalogPageSelectors": {
+        "filterCheckboxItems": "#schema-filter > div:nth-child(8) > div:nth-child(4) > div.schema-filter__facet > ul > li:nth-child(1) > label > span.schema-filter__checkbox-text",
+        "manufacturerCheckboxText": "span.schema-filter__checkbox-text",
+        "productTitles": "div.schema-product__title > a > span",
+        "firstProductSelector": "#schema-products > div:nth-child(2) > div > div.schema-product__part.schema-product__part_2 > div.schema-product__part.schema-product__part_4 > div.schema-product__title > a",
+        "addToCartButtonSelector": "#container > div > div > div > div > div.catalog-content.js-scrolling-area > div.product.product_details.b-offers.js-product > main > div > div > aside > div:nth-child(1) > div.product-aside__offers > div.product-aside__offers-list > div.product-aside__offers-item.product-aside__offers-item_primary > div.product-aside__control.product-aside__control_condensed-additional > a.button-style.button-style_base-alter.button-style_primary.product-aside__button.product-aside__button_narrow.product-aside__button_cart.button-style_expletive",
+        "selectedMethodSelector": "#schema-order > a",
+        "mostExpensiveSelector": "#schema-order > div.schema-order__popover > div > div:nth-child(3)",
+        "goodPriceSelector": "a.schema-product__price-value.schema-product__price-value_primary.js-product-price-link",
+        "socialLinkSelector": "div.footer-style__social > a",
+        "amountInput": "#container > div.cart-content > div > div > div > div > div.cart-form__body > div > div.cart-form__offers > div > div > div.cart-form__offers-item.cart-form__offers-item_secondary > div > div.cart-form__offers-part.cart-form__offers-part_action > div > div.cart-form__offers-part.cart-form__offers-part_count > div > div > div > input"
+    },
+    "cartPageSelectors": {
+        "amountInputSelector": "#container > div.cart-content > div > div > div > div > div.cart-form__body > div > div.cart-form__offers > div > div > div.cart-form__offers-item.cart-form__offers-item_secondary > div > div.cart-form__offers-part.cart-form__offers-part_action > div > div.cart-form__offers-part.cart-form__offers-part_count > div > div > div > input",
+        "cityInputSelector": "#container > div > div.cart-wrapper > div > div > div > div.cart-form__body > div > div.cart-form__flex > div.cart-form__part.cart-form__part_wide > div > div > div.cart-form__step-item.cart-form__step-item_secondary > div:nth-child(3) > div > div:nth-child(1) > div > div.cart-form__field > div > div > div > div > div > input",
+        "optionsWrapperSelector": "div.auth-dropdown",
+        "elementInCartSelector": "#container > div.cart-content > div > div > div > div > div.cart-form__body > div > div.cart-form__offers > div > div",
+        "makeOrderButtonSelector": "#container > div.cart-content > div > div > div > div > div.cart-form__body > div > div.cart-form__offers > div > div > div.cart-form__offers-item.cart-form__offers-item_additional > div > div.cart-form__offers-part.cart-form__offers-part_total > div.cart-form__offers-flex.cart-form__offers-flex_reverse_extended > div > div > a"
+    },
+    "testData": {
+        "cartAmount": ["0", "-1", "99999999", "qwerty"],
+        "cityName": ["xd", "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"],
+        "manufacturer": "Palit"
+    }
+}
